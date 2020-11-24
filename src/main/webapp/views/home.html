@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Home - Expense Reimbursement System</title>
+<link rel="stylesheet" href="../styles/global.css">
+<script src="../scripts/home.js"></script>
+</head>
+<body>
+<div class="container">
+	<div id="header">
+		<h1>Expense Reimbursement System</h1>
+	</div>
+	<div id="title">
+		<h2>Employee Home</h2>
+	</div>
+	<div id="infoDiv">
+		<h3>Your Information</h3>
+		<p id="info"></p>
+		<form action="./edit-info.html">
+			<button>Edit Info</button>
+		</form>
+	</div>
+	<div id="requests">
+		<h3 id="requestsHeading">Your Pending Requests</h3>
+		<form action="./new-request.html">
+			<button>New Request</button>
+		</form>
+		<form action="./resolved-requests.html">
+			<button>View Resolved Requests</button>
+		</form>
+	</div>	
+	<div id="logout">
+		<form id="logoutForm" method="get" action="../Logout">
+			<button>Log Out</button>
+		</form>
+	</div>
+</div>
+</body>
+</html>

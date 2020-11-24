@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Edit Info - Expense Reimbursement System</title>
+<link rel="stylesheet" href="../styles/global.css">
+<script src="../scripts/edit-info.js"></script>
+</head>
+<body>
+<div class="container">
+	<div id="header">
+		<h1>Expense Reimbursement System</h1>
+	</div>
+	<div id="title">
+		<h2>Edit Your Information</h2>
+	</div>
+	<div id="formDiv">
+		<form id="sendEdit" method="post" action="../EditInfoServlet">
+			<textarea id="infobox" rows="4" cols="50" name="newInfo" form="sendEdit"></textarea>
+			<br>
+			<button>Submit</button>
+		</form>
+		<form id="cancel" action="./home.html">
+			<button>Cancel</button>
+		</form>
+	</div>
+	</div>
+</body>
+</html>

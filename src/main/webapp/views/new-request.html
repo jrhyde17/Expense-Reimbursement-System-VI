@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>New Request - Expense Reimbursement System</title>
+<link rel="stylesheet" href="../styles/global.css">
+<link rel="stylesheet" href="../styles/new-request.css">
+</head>
+<body>
+<div class="container">
+	<div id="header">
+		<h1>Expense Reimbursement System</h1>
+	</div>
+	<div id="title">
+		<h2>Submit a New Request</h2>
+	</div>
+	<div id="formDiv">
+		<form class="requestForm" id="newRequest" method="post" action="../NewRequestServlet" enctype="multipart/form-data">
+			<label class="requestForm" for="amount">Amount: </label>
+			<input class="requestForm" type="text" id="amount" name="amount" required pattern="[1-9]|[1-9][0-9]+|0\.0[1-9]|0\.[1-9][0-9]|[1-9]\.[0-9][0-9]|[1-9][0-9]+\.[0-9][0-9]">
+			<br>
+			<label class="requestForm" for="image">Image:</label>
+			<input class="requestForm" type="file" id="image" name="image" accept="image/png">
+			<br>
+			<label class="requestForm" for="summary">Summary:</label>
+			<input class="requestForm" type="text" id="summary" name="summary" required>
+			<br>
+		</form>
+		<form id="cancel" action="./home.html">
+		</form>
+		<button type="submit" form="newRequest">Confirm</button>
+		<button form="cancel">Cancel</button>
+	</div>
+</div>
+</body>
+</html>

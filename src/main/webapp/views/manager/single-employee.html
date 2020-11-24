@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Single Employee's Requests - Expense Reimbursement System</title>
+<link rel="stylesheet" href="../../styles/global.css">
+<script src="../../scripts/single-employee.js"></script>
+</head>
+<body>
+<div class="container">
+	<div id="header">
+		<h1>Expense Reimbursement System</h1>
+	</div>
+	<div id="title">
+		<h2>Employee Selector</h2>
+	</div>
+	<div id="selectorDiv">		
+		<select id="select" name="employee"></select>
+		<button onclick="fetchRequests()">Select</button>
+	</div>
+	<div id="tableDiv"></div>
+	<div id="goBackDiv">
+		<form id="goBackForm" action="./manager-tools.html">
+			<button>Back</button>
+		</form>
+	</div>
+</div>
+</body>
+</html>
